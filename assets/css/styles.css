@@ -28,6 +28,7 @@ html {
   right: 0;
   height: 46px;
   background-color: #000;
+  z-index: 1;
 }
 #nav {
   display: inline-block;
@@ -93,25 +94,56 @@ html {
   line-height: 46px;
 }
 #slider {
-
-    margin-top: 46px;
-    padding-top: 50%;
-    background: url('/assets/img/Slider/silder1.jpg')top center / cover no-repeat ;
+  position: relative;
+  margin-top: 46px;
+  padding-top: 40%;
+  background: url("/assets/img/Slider/silder1.jpg") top center / cover no-repeat;
+}
+#slider .text-content {
+  position: absolute;
+  bottom: 47px;
+  color: #fff;
+  /* left: 50%;
+  transform: translate(-50%); */
+  width: 100%;
+  text-align: center;
+}
+#slider .text-heading {
+  font-weight: 500;
+  font-size: 26px;
 
 }
-#slider .text-content{
-position: absolute;
-bottom: 0;
-color: #fff;
-}
-#slider .text-heading{
-
-}
-#slider .text-description{
-
+#slider .text-description {
 }
 #content {
 }
+#content .content-section{
+  width: 600px;
+  padding: 15px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+#content .section-heading{
+font-size: 30px;
+font-weight: 500;
+letter-spacing: 4px;
 
+}
+#content .section-sub-heading{
+font-size: 15px;
+font-style: italic;
+opacity: 0.6;
+}
+#content .section-heading,
+#content .section-sub-heading{
+text-align: center;
+margin-top: 25px;
+}
+#content .about-content{
+  text-align: center;
+  margin-top: 15px;
+  text-align: justify;
+
+}
 #footer {
 }
