@@ -97,11 +97,12 @@ html {
   position: relative;
   margin-top: 46px;
   padding-top: 40%;
-  background: url("/assets/img/Slider/silder1.jpg") top center / cover no-repeat;
+  background: url('/assets/img/Slider/silder1.jpg') top center / cover no-repeat;
 }
 #slider .text-content {
+  padding: 32px 16px;
   position: absolute;
-  bottom: 47px;
+  bottom: 0;
   color: #fff;
   /* left: 50%;
   transform: translate(-50%); */
@@ -111,14 +112,16 @@ html {
 #slider .text-heading {
   font-weight: 500;
   font-size: 26px;
+  margin: 10px 0;
 
 }
 #slider .text-description {
+  margin: 15px 0;
 }
 #content {
 }
 #content .content-section{
-  width: 600px;
+  width: 800px;
   padding: 15px 0;
   margin-left: auto;
   margin-right: auto;
@@ -137,26 +140,30 @@ opacity: 0.6;
 #content .section-heading,
 #content .section-sub-heading{
 text-align: center;
-margin-top: 25px;
+margin: 15px 0;
 }
 #content .about-content{
   text-align: center;
-  margin-top: 15px;
+  margin: 15px 0;
   text-align: justify;
   line-height: 1.4;
 }
 
 #content .member-item{
-  width: 100%;
-  height: 100vh;
-background-size:  100px;
-/* float: left; */
 display: inline-block;
+width: 32%;
+text-align: center;
+text-align: 48px;
 }
-
+#content .member-name{
+  margin: 15px 0;
+}
+#content .member-item img{
+  width: 85%;
+  margin-bottom: 15px;
+}
 #content .member-list{
-margin-top: 48px;
-
+padding: 32px 0;
 
 }
 #footer {
